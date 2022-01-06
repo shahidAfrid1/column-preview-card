@@ -1,0 +1,154 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 1000px) {
+  main {
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 88px 0;
+  }
+}
+
+main .hero .card {
+  width: 310px;
+  height: 500px;
+  padding: 48px;
+}
+
+@media (max-width: 1000px) {
+  main .hero .card {
+    width: 328px;
+    height: 443px;
+  }
+}
+
+main .hero .card > h1 {
+  font-size: 36px;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  margin: 40px 0;
+  color: #f2f2f2;
+}
+
+main .hero .card > p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+}
+
+main .hero .card > button {
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  border: none;
+  margin-top: 87px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 1000px) {
+  main .hero .card > button {
+    margin-top: 30px;
+  }
+}
+
+main .hero .card .btn {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+main .hero .card .btn:hover {
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+}
+
+main .hero .card .btn1 {
+  color: #e38826;
+}
+
+main .hero .card .btn2 {
+  color: #006970;
+}
+
+main .hero .card .btn3 {
+  color: #004241;
+}
+
+main .hero .card1 {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 1000px) {
+  main .hero .card1 {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+main .hero .card2 {
+  background-color: #006970;
+}
+
+main .hero .card3 {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 1000px) {
+  main .hero .card3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
